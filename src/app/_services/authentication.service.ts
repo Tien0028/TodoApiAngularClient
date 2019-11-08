@@ -28,12 +28,12 @@ export class AuthenticationService {
 
     getToken(): string {
       const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-      return currentUser && currentUser.token;
+      return currentUser.token;
     }
 
     getUsername(): string {
       const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-      return currentUser && currentUser.username;
+      return currentUser.username;
     }
 
   logout(): void {
